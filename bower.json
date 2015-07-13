@@ -1,0 +1,20 @@
+{
+  "name": "RLSv1.1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/3lemental/RLS",
+  "authors": [
+    "3lemental <3lemental@zoho.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3"
+  }
+}
