@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<head>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"  type="text/css"/>
+<link rel="stylesheet" href="css/style.css"  type="text/css"/>
+<link rel="stylesheet" href="bower_components/bootstrap-select/bootstrap-select.css"  type="text/css"/>
+</head>
+<body>
+
+<div class="well well-sm" style="text-align:center">
+<h3> Responsive Bootstrap-3 Contact Form - InfoTuts</h3>
+</div>
+<div class="container">
+      <form class="myfirstform" role="form">
+	<!--  
+		<legend>Contact Form</legend>		-->
+		<div class="form-group">
+	        <label class="control-label">Name</label>
+			<div class="controls">
+			    <div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input type="text" class="form-control" name="name" placeholder="Name">
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="form-group">
+	        <label class="control-label">Email</label>
+			<div class="controls">
+			    <div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					<input type="text" class="form-control" id="email" name="email" placeholder="Email">
+				</div>
+			</div>	
+		</div>
+		
+		<div class="form-group ">
+	        <label class="control-label">Website</label>
+			<div class="controls">
+			    <div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+					<input type="text" class="form-control" id="lname" name="website" placeholder="website url">
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group ">
+	        <label class="control-label">Category</label>
+			<div class="controls">
+		 <div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+					<select name="cate" class="form-control selectpicker  show-tick" > <option> Plugin Development</option>
+					<option> Web Design</option>
+					<option> WP Customization</option>
+					</select>
+					
+				</div>
+				</div>
+		</div>
+		
+		<div class="form-group ">
+	        <label class="control-label">Message</label>
+			<div class="controls">
+			    <div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+					<textarea name="msg" class="form-control " rows="4" cols="78" placeholder="Enter your message here"></textarea>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	      <div class="controls" style="margin-left: 40%;">
+		  
+	       <button type="submit" id="mybtn"  class="btn btn-primary" >Send Message</button>
+	        
+	      </div>
+		</form>
+		</div>
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="node_modules/jquery-json/jquery.json.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="bower_components/bootstrap-select/bootstrap-select.js"></script>
+    <script src="bower_components/jquery.validate/jquery.validate.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="js/script2.js"></script>
+
+</body>
+</html>

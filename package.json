@@ -1,0 +1,24 @@
+{
+  "name": "rls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "jquery-json": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3lemental/RLS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3lemental/RLS/issues"
+  },
+  "homepage": "https://github.com/3lemental/RLS#readme"
+}
