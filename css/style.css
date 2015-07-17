@@ -1,3 +1,28 @@
+body { 
+	padding-top: 70px;
+}
+
+
+#home {
+	height: 768px;
+	
+}
+
+#about {
+	height: 768px;
+}
+
+#prices {
+	height: 768px;
+}
+
+#contact_us {
+
+}
+
+.footer {
+
+}
 label.error{
 color: red !important;
 }
