@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8"/>
+<html lang="en">
 <head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"  type="text/css"/>
 <link rel="stylesheet" href="bower_components/bootstrap-select/bootstrap-select.css"  type="text/css"/>
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
@@ -27,7 +28,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
 				<li><a href="#about">About</a></li>
-				<li><a href="#prices">Prices</a></li>
+				<li><a href="#prices">Pricing</a></li>
 				<li><a href="#contact_us">Contact Us</a></li>
 			</ul>
 		</div>
@@ -36,36 +37,80 @@
 <!-- End Navigation Menu -->
 
 <!-- Section 1 - Home-->
-<div id="home">
-	<h1>
-		Home
-	</h1>
-	<p>This is home section.</p>
+<div id="home" class="home">
+	<div class="text-vcenter">
+		<h1>Reliable Lawn Care</h1>
+		<h3>Economical Full-Service Lawn Care</h3>
+		<a href="#prices" class="btn btn-default btn-lg">Our Prices</a>
+		<a href="#contact_us" class="btn btn-default btn-lg">Send Us A Message!</a>
+	</div>
 </div>
 <!-- End Section 1 - Home-->
 
 <!-- Section 2 - About -->
 <div id="about">
-	<h1>
-		About
-	</h1>
-	<p>This is about section.</p>
+	<div class="well">
+		<h1>
+			About Us
+		</h1>
+	</div>
+	<div class="container">
+		<p>Reliable Lawn Care serves Kenner and Metairie. We provide full-service lawn care at competitive pricing. Our services are weekly and include trimming, edging, and clean-up. Clippings are always bagged and we strive for quality to keep your lawn looking great.</p>
+	</div>
 </div>
 <!-- End Section 2 - About -->
 
 <!-- Section 3 - Prices -->
 <div id="prices">
-	<h1>
-		Price
-	</h1>
-	<p>This is price section.</p>
+	<div class="well">
+		<h1>Service Prices</h1>
+		<h3>Lawn Size and Scheduling</h3>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<table class="table table-bordered">
+					<tr>
+						<th colspan="2"><h2>Small Yards<small><br/>Up to 3000 SQFT</small></h2></th>
+					</tr>
+					<tr>
+						<th rowspan="1"><h3>Weekly</h3></th><td><h3 class="text-center">$20</h3></td>
+					</tr>
+					<tr>
+						<th rowspan="1"><h3>Every 10-days</h3></th><td><h3 class="text-center">$25</h3></td>
+					</tr>
+					<tr>
+						<th rowspan="1"><h3>Biweekly</h3></th><td><h3 class="text-center">$35</h3></td>
+					</tr>
+				</table>
+			</div>
+		
+				<div class="col-md-6">
+					<table class="table table-bordered">
+						<tr>
+							<th colspan="2"><h2>Large Yards<small><br/>Up to 5000 SQFT</small></h2></th>
+						</tr>
+						<tr>
+							<th rowspan="1"><h3>Weekly</h3></th><td><h3 class="text-center">$25</h3></td>
+						</tr>
+						<tr>
+							<th rowspan="1"><h3>Every 10-days</h3></th><td><h3 class="text-center">$30</h3></td>
+						</tr>
+						<tr>
+							<th rowspan="1"><h3>Biweekly</h3></th><td><h3 class="text-center">$45</h3></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</div>
+	</div>
 </div>
 <!-- End Section 3 - Prices -->
 
 <!-- Section 4 - Contact -->
 <div id="contact_us">
-	<div class="well well-sm" style="text-align:center">
-		<h3>Contact Us!</h3>
+	<div class="well" style="text-align:center">
+		<h1>Contact Us!</h1>
 	</div>
 	<div class="container">
       <form class="myfirstform" role="form">
@@ -92,7 +137,7 @@
 			</div>	
 		</div>
 		
-		<div class="form-group ">
+		<!-- <div class="form-group ">
 	        <label class="control-label">Website</label>
 			<div class="controls">
 			    <div class="input-group">
@@ -100,9 +145,9 @@
 					<input type="text" class="form-control" id="lname" name="website" placeholder="website url">
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
-		<div class="form-group ">
+		<!-- <div class="form-group ">
 	        <label class="control-label">Category</label>
 			<div class="controls">
 		 <div class="input-group">
@@ -114,7 +159,7 @@
 					
 				</div>
 				</div>
-		</div>
+		</div> -->
 		
 		<div class="form-group ">
 	        <label class="control-label">Message</label>
@@ -140,6 +185,12 @@
 <!-- End Section 4 - Contact -->
 
 <!-- Footer -->
+<footer>
+	<hr/>
+	<div class="container">
+		<p class="text-right">Copyright &copy; Reliable Lawn Services &#8482 2015</p>
+	</div>
+</footer>
 
 <!-- End Footer -->
 

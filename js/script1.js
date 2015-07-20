@@ -16,8 +16,8 @@ $(".myfirstform").validate(
 {rules:
 {name:"required",
 email:{required:true,email:true},
-website:{required:false,url:true},
-cate:"required",
+// website:{required:false,url:true},
+// cate:"required",
 msg:{required:true, maxlength:300
 }},
 errorClass:"error",
