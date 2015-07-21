@@ -3,7 +3,7 @@ $(document).ready(function(){
 submitHandler: function(form) {
     $.ajax({
 		  type: "POST",
-		  url: "email.php",
+		  url: "../email.php",
 		  data: { 'val':$(".myfirstform").serializeJSON() }
 		}).done(function(data) {
 		alert(data);

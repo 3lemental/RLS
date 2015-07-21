@@ -6,8 +6,70 @@
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"  type="text/css"/>
 <link rel="stylesheet" href="bower_components/bootstrap-select/bootstrap-select.css"  type="text/css"/>
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
+<!-- Scripts -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="node_modules/jquery-json/jquery.json.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="bower_components/bootstrap-select/bootstrap-select.js"></script>
+    <script src="bower_components/jquery.validate/jquery.validate.js"></script>
+    <script type="text/javascript" src="bower_components/jquery.serializeJSON/jquery.serializejson.js"></script>
+    
+<!-- End Scripts -->
 </head>
+<script type="text/javascript">
 
+$(document).ready(function(){
+ $.validator.setDefaults({
+submitHandler: function(form) {
+    $.ajax({
+		  type: "POST",
+		  url: "./email.php",
+		  data: { 'val':$(".myfirstform").serializeJSON() }
+		}).done(function(data) {
+		alert(data);
+		   
+		});
+  }
+
+});
+$(".myfirstform").validate(
+{rules:
+{name:"required",
+email:{required:true,email:true},
+// website:{required:false,url:true},
+// cate:"required",
+msg:{required:true, maxlength:300
+}},
+errorClass:"error",
+highlight: function(label) {
+    $(label).closest('.form-group').removeClass('has-success').addClass('has-error');
+  },
+
+success: function(label) {
+    label
+      .text('Seems Perfect!').addClass('valid')
+	  .closest('.form-group').addClass('has-success');
+      
+  }
+}
+  
+);
+
+});
+
+</script>
+
+<script type="text/javascript">
+//         $(window).on('load', function () {
+
+//             $('.selectpicker').selectpicker({
+//                 'selectedText': 'cat'
+//             });
+
+//             // $('.selectpicker').selectpicker('hide');
+//         });
+
+// </script>
 <body id="prlx_lyr_1">
 <!-- Navigation Menu -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
@@ -195,15 +257,7 @@
 <!-- End Footer -->
 
 
-<!-- Scripts -->
-<script src="bower_components/jquery/jquery.js"></script>
-<script src="node_modules/jquery-json/jquery.json.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-   <script src="bower_components/bootstrap-select/bootstrap-select.js"></script>
-    <script src="bower_components/jquery.validate/jquery.validate.js"></script>
-    <script src="js/script1.js"></script>
-    <script src="js/script2.js"></script>
-<!-- End Scripts -->
+
 
 </body>
 </html>
