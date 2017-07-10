@@ -13,7 +13,7 @@
    <script src="bower_components/bootstrap-select/bootstrap-select.js"></script>
     <script src="bower_components/jquery.validate/jquery.validate.js"></script>
     <script type="text/javascript" src="bower_components/jquery.serializeJSON/jquery.serializejson.js"></script>
-    
+
 <!-- End Scripts -->
 </head>
 <script type="text/javascript">
@@ -27,7 +27,7 @@ submitHandler: function(form) {
 		  data: { 'val':$(".myfirstform").serializeJSON() }
 		}).done(function(data) {
 		alert(data);
-		   
+
 		});
   }
 
@@ -49,10 +49,10 @@ success: function(label) {
     label
       .text('Seems Perfect!').addClass('valid')
 	  .closest('.form-group').addClass('has-success');
-      
+
   }
 }
-  
+
 );
 
 });
@@ -108,9 +108,9 @@ success: function(label) {
 	</div>
 </div>
 <!-- End Section 1 - Home-->
-
+<!--
 <!-- Section 2 - About -->
-<div id="about">
+<!-- <div id="about">
 	<div class="well">
 		<h1>
 			About Us
@@ -119,9 +119,9 @@ success: function(label) {
 	<div class="container">
 		<p>Reliable Lawn Care serves Kenner and Metairie. We provide full-service lawn care at competitive pricing. Our services are weekly and include trimming, edging, and clean-up. Clippings are always bagged and we strive for quality to keep your lawn looking great.</p>
 	</div>
-</div>
+</div> -->
 <!-- End Section 2 - About -->
-
+ -->
 <!-- Section 3 - Prices -->
 <div id="prices">
 	<div class="well">
@@ -146,7 +146,7 @@ success: function(label) {
 					</tr>
 				</table>
 			</div>
-		
+
 				<div class="col-md-6">
 					<table class="table table-bordered">
 						<tr>
@@ -176,7 +176,7 @@ success: function(label) {
 	</div>
 	<div class="container">
       <form class="myfirstform" role="form">
-	<!--  
+	<!--
 		<legend>Contact Form</legend>		-->
 		<div class="form-group">
 	        <label class="control-label">Name</label>
@@ -187,8 +187,8 @@ success: function(label) {
 				</div>
 			</div>
 		</div>
-		
-		
+
+
 		<div class="form-group">
 	        <label class="control-label">Email</label>
 			<div class="controls">
@@ -196,9 +196,9 @@ success: function(label) {
 				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 					<input type="text" class="form-control" id="email" name="email" placeholder="Email">
 				</div>
-			</div>	
+			</div>
 		</div>
-		
+
 		<!-- <div class="form-group ">
 	        <label class="control-label">Website</label>
 			<div class="controls">
@@ -208,7 +208,7 @@ success: function(label) {
 				</div>
 			</div>
 		</div> -->
-		
+
 		<!-- <div class="form-group ">
 	        <label class="control-label">Category</label>
 			<div class="controls">
@@ -218,11 +218,11 @@ success: function(label) {
 					<option> Web Design</option>
 					<option> WP Customization</option>
 					</select>
-					
+
 				</div>
 				</div>
 		</div> -->
-		
+
 		<div class="form-group ">
 	        <label class="control-label">Message</label>
 			<div class="controls">
@@ -233,13 +233,13 @@ success: function(label) {
 				</div>
 			</div>
 		</div>
-		
-		
-		
+
+
+
 	      <div class="controls" style="margin-left: 40%;">
-		  
+
 	       <button type="submit" id="mybtn"  class="btn btn-primary" >Send Message</button>
-	        
+
 	      </div>
 		</form>
 		</div>
